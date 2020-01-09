@@ -1,0 +1,61 @@
+.container {
+  // margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // margin-top: 8rem;
+}
+.main-section {
+  max-width: 60rem;
+  height: 76vh;
+  margin-bottom: 0;
+  // background: linear-gradient(rgba(41, 87, 164, 0.6), rgba(44, 89, 167, 0.3)),
+  //   url(../images/team-strategize.jpg) no-repeat fixed;
+  background-size: contain;
+}
+
+.header-text {
+  font-size: 5rem;
+  padding: 8rem 0 0 2rem;
+  margin-top: 5rem;
+  // color: #ffffff;
+  color: #000000;
+}
+
+.contact-details {
+  margin: 15rem 3rem 0 2rem;
+  width: 25rem;
+  background: #1e1e1e;
+  border-radius: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-header {
+  margin-top: 2rem;
+}
+.contact-social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-social ul li {
+  list-style-type: none;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+.contact-info ul li {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  & span {
+    //   padding-right: 1rem;
+    float: left;
+    font-size: 2rem;
+  }
+}

@@ -1,18 +1,41 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+
 import Logo from "../images/waffiihub-logo.png"
+import HeaderStyle from "./header.module.scss"
 
 const Header = () => (
   <header>
-    <nav className="nav">
-      <div className="logo-container">
-        <img style={{ height: 70 }} alt="WaffiiHub logo" src={Logo} />
-      </div>
-
+    <nav className={HeaderStyle.nav}>
       <div>
-        
+        <Link to="/">
+          <img className={HeaderStyle.logo} alt="WaffiiHub logo" src={Logo} />
+        </Link>
       </div>
+      <ul className={HeaderStyle.navList}>
+        <li>
+          <Link
+            className={HeaderStyle.navItem}
+            activeClassName={HeaderStyle.activeNavItem}
+            to="/about"
+          >
+            Who We Are
+          </Link>{" "}
+        </li>
+        <li>
+          {" "}
+          <Link
+            className={HeaderStyle.navItem}
+            activeClassName={HeaderStyle.activeNavItem}
+            to="/focus"
+          >
+            {" "}
+            What We do{" "}
+          </Link>
+        </li>
+      </ul>
     </nav>
   </header>
 )
