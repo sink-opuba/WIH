@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
 
-import Logo from "../images/waffiihub-logo.png"
+import Logo from "../images/waffiihub-logo-white.png"
 import HeaderStyle from "./header.module.scss"
 
 const Header = () => (
   <header>
     <nav className={HeaderStyle.nav}>
-      <div>
+      <div style={{ padding: "2rem" }}>
         <Link to="/">
           <img className={HeaderStyle.logo} alt="WaffiiHub logo" src={Logo} />
         </Link>
@@ -33,6 +33,17 @@ const Header = () => (
           >
             {" "}
             What We do{" "}
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link
+            className={HeaderStyle.navItem}
+            activeClassName={HeaderStyle.activeNavItem}
+            to="/blog"
+          >
+            {" "}
+            Blog{" "}
           </Link>
         </li>
       </ul>

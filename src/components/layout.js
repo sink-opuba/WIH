@@ -14,20 +14,10 @@ import "../styles/global.scss"
 import layoutStyles from "./layout.module.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div className={layoutStyles.container}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <div>
           <main>{children}</main>
         </div>
