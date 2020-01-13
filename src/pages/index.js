@@ -16,7 +16,9 @@ const IndexPage = () => (
           Entrepreneurs <br /> in the Niger Delta
         </h1>
       </section>
-      <ContactDetail />
+      <section className={IndexStyle.contactSection}>
+        <ContactDetail />
+      </section>
     </div>
   </Layout>
 )

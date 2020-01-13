@@ -1,7 +1,7 @@
 $color-black: rgb(31, 31, 31);
 
 .contact-details {
-  margin: 15rem 9rem 3rem 0rem;
+  margin: 3rem auto 3rem auto;
   width: 25rem;
   max-height: 45rem;
   background: #fff;
@@ -11,7 +11,8 @@ $color-black: rgb(31, 31, 31);
 }
 
 .contact-header {
-  margin-top: 2rem;
+  // margin-top: 2rem;
+  padding-top: 2rem;
   text-align: center;
 }
 .contact-social ul {
@@ -43,3 +44,9 @@ $color-black: rgb(31, 31, 31);
     font-size: 2.2rem;
   }
 }
+
+// @media only screen and (max-width) {
+//   .contact-details {
+//     margin: 10rem auto 3rem auto;
+//   }
+// }

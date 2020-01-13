@@ -9,7 +9,7 @@ import HeaderStyle from "./header.module.scss"
 const Header = () => (
   <header>
     <nav className={HeaderStyle.nav}>
-      <div style={{ padding: "2rem" }}>
+      <div className={HeaderStyle.logoContainer}>
         <Link to="/">
           <img className={HeaderStyle.logo} alt="WaffiiHub logo" src={Logo} />
         </Link>
