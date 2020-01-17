@@ -14,13 +14,13 @@ const Navigation = () => (
     <div className="navigation__nav">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <Link to="#">Who We Are</Link>
+          <Link to="/about">Who We Are</Link>
         </li>
         <li className="navigation__item">
-          <Link to="#">What We do</Link>
+          <Link to="/focus">What We do</Link>
         </li>
         <li className="navigation__item">
-          <Link to="#">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </li>
       </ul>
       <div className="navigation__contact">

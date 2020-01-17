@@ -1,4 +1,4 @@
-$color-black: rgb(31, 31, 31);
+$color-black: #1f1f1f;
 
 .contact-details {
   margin: 3rem auto 3rem auto;
@@ -11,7 +11,6 @@ $color-black: rgb(31, 31, 31);
 }
 
 .contact-header {
-  // margin-top: 2rem;
   padding-top: 2rem;
   text-align: center;
 }
@@ -40,8 +39,8 @@ $color-black: rgb(31, 31, 31);
   & span {
     padding-right: 1rem;
     position: relative;
-    top: 0.5rem;
     font-size: 2.2rem;
+    float: left;
   }
 }
 

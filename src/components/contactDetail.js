@@ -14,28 +14,43 @@ const ContactDetail = () => (
     <div className={contactDetailStyle.contactSocial}>
       <ul className={contactDetailStyle.socialIconList}>
         <li>
-          <a style={{ color: "#1DA1F2" }} href="#twitter" target="_blank">
+          <a
+            style={{ color: "#1DA1F2" }}
+            href="https://twitter.com/WaffiiHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
           </a>
         </li>
         <li>
           <a
             style={{ color: "#3A5895" }}
-            href="#twitter"
             href="#facebook"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaFacebookF />
           </a>
         </li>
         <li>
-          <a style={{ color: "#CC0068" }} href="#instagram" target="_blank">
+          <a
+            style={{ color: "#CC0068" }}
+            href="#instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram />{" "}
           </a>
         </li>
 
         <li>
-          <a style={{ color: "#0081F3" }} href="#linkedIn" target="_blank">
+          <a
+            style={{ color: "#0081F3" }}
+            href="#linkedIn"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FaLinkedinIn />
           </a>
         </li>

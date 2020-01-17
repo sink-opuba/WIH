@@ -21,8 +21,8 @@
   font-size: 1.7rem;
   font-weight: bold;
   margin-left: 4rem;
+  // color: #ffffff;
   text-decoration: none;
-  color: #fff;
   padding: 0.6rem 1rem;
 }
 
@@ -36,15 +36,19 @@
   transition: 0.5s;
 }
 
+.nav-item-black::after {
+  border-bottom: 2px solid #1f1f1f !important;
+}
+
 .nav-item:hover::after {
-  width: 30%;
+  width: 40%;
 }
 
 .active-nav-item::after {
   content: "";
   display: block;
   margin-left: 5rem;
-  width: 28%;
+  width: 35%;
   padding-top: 1rem;
   border-bottom: 2px solid #ffffff;
 }
