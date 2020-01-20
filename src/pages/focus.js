@@ -1,5 +1,4 @@
 import React from "react"
-import { startupSupport } from "../images/focus"
 
 import Layout from "../components/layout"
 import FocusStyle from "../styles/focus.module.scss"
