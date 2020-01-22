@@ -10,7 +10,7 @@ import {
   FaProjectDiagram,
   FaUserCircle,
 } from "react-icons/fa"
-import { MdBuild, MdAccessible } from "react-icons/md"
+import { MdAccessible } from "react-icons/md"
 
 const AreasOfFocusPage = () => (
   <Layout>
