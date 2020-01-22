@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import AboutStyle from "../styles/about.module.scss"
 import SEO from "../components/seo"
 
-import { /*user2, user3, user4, user5, */ user6 } from "../images/team"
+import { paul } from "../images/team"
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa"
 
 const SecondPage = () => (
@@ -25,7 +25,7 @@ const SecondPage = () => (
         <div className={AboutStyle.teamContainer}>
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -51,7 +51,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -77,7 +77,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -103,7 +103,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -129,7 +129,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -155,7 +155,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -181,7 +181,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -207,7 +207,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -233,7 +233,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -259,7 +259,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
@@ -285,7 +285,7 @@ const SecondPage = () => (
 
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
-              <img className={AboutStyle.teamImg} alt="" src={user6} />
+              <img className={AboutStyle.teamImg} alt="" src={paul} />
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}

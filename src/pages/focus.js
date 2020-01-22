@@ -3,7 +3,13 @@ import React from "react"
 import Layout from "../components/layout"
 import FocusStyle from "../styles/focus.module.scss"
 import SEO from "../components/seo"
-import { FaSuperpowers, FaCode, FaChalkboardTeacher, FaProjectDiagram, FaUserCircle } from "react-icons/fa"
+import {
+  FaSuperpowers,
+  FaCode,
+  FaChalkboardTeacher,
+  FaProjectDiagram,
+  FaUserCircle,
+} from "react-icons/fa"
 import { MdBuild, MdAccessible } from "react-icons/md"
 
 const AreasOfFocusPage = () => (
@@ -22,7 +28,7 @@ const AreasOfFocusPage = () => (
               <FaSuperpowers className={FocusStyle.focusIcon} />
             </div>
             <div className={FocusStyle.focusArea}>
-              <h3 className={FocusStyle.focusHeader}>We Support Startups</h3>
+              <h3 className={FocusStyle.focusHeader}>Startup Support</h3>
               <p className={FocusStyle.focusText}>
                 Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
                 reprehenderit. Cillum excepteur pariatur culpa eu excepteur
@@ -80,7 +86,9 @@ const AreasOfFocusPage = () => (
               <FaProjectDiagram className={FocusStyle.focusIcon} />
             </div>
             <div className={FocusStyle.focusArea}>
-              <h3 className={FocusStyle.focusHeader}>Consulting and Project Implementation</h3>
+              <h3 className={FocusStyle.focusHeader}>
+                Consulting and Project Implementation
+              </h3>
               <p className={FocusStyle.focusText}>
                 Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
                 reprehenderit. Cillum excepteur pariatur culpa eu excepteur
@@ -116,7 +124,6 @@ const AreasOfFocusPage = () => (
               </p>
             </div>
           </div>
-
         </div>
       </section>
     </div>
