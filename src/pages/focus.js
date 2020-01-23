@@ -30,9 +30,9 @@ const AreasOfFocusPage = () => (
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>Startup Support</h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We provide conducive workspace for startups, access to talent,
+                access to fellow entrepreneurs and investors. We also run
+                Pre-incubation, incubation, and accelerator program at the hub.
               </p>
             </div>
           </div>
@@ -43,12 +43,11 @@ const AreasOfFocusPage = () => (
             </div>
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>
-                Software Development and Outsourcing
+                Software Development & Outsourcing
               </h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We Design, build and manage both mobile, desktop and web
+                applications.
               </p>
             </div>
           </div>
@@ -60,9 +59,8 @@ const AreasOfFocusPage = () => (
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>Capacity building</h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We run trainings, internships, and events focused on building
+                and grooming the capacity of youths in the Niger Delta region.
               </p>
             </div>
           </div>
@@ -74,9 +72,8 @@ const AreasOfFocusPage = () => (
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>Market Entry</h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We help companies and organizations bring/launch their products,
+                services or programs in the Niger Delta region.
               </p>
             </div>
           </div>
@@ -87,12 +84,13 @@ const AreasOfFocusPage = () => (
             </div>
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>
-                Consulting and Project Implementation
+                Consulting & Project Implementation
               </h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We give businesses, organizations, and companies expert advice
+                on digital-related issues and solutions. We also help excute
+                projects in the Niger Delta region for individuals and
+                organizations.
               </p>
             </div>
           </div>
@@ -104,9 +102,7 @@ const AreasOfFocusPage = () => (
             <div className={FocusStyle.focusArea}>
               <h3 className={FocusStyle.focusHeader}>Social Impact</h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                We run various social impact project here at the hub.
               </p>
             </div>
           </div>
@@ -116,11 +112,11 @@ const AreasOfFocusPage = () => (
               <FaChalkboardTeacher className={FocusStyle.focusIcon} />
             </div>
             <div className={FocusStyle.focusArea}>
-              <h3 className={FocusStyle.focusHeader}>WorkSpace Rental</h3>
+              <h3 className={FocusStyle.focusHeader}>Workspace & Event Hall</h3>
               <p className={FocusStyle.focusText}>
-                Duis sint elit minim magna aute ipsum amet tempor enim eu dolore
-                reprehenderit. Cillum excepteur pariatur culpa eu excepteur
-                irure. Elit pariatur anim irure cillum ullamco laborum sit
+                A space designed for you to get work done with steady power and
+                fast Internet, and access to a community of like-minds. We also
+                have various halls/rooms for meetings and events at the hub.
               </p>
             </div>
           </div>
