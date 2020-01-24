@@ -95,6 +95,9 @@ $color-primary-light: rgb(54, 98, 173);
 }
 
 @media only screen and (max-width: 485px) {
+  .main-section {
+    padding: 3rem 0.8rem 4rem 0.8rem;
+  }
   .card-container {
     grid-template-columns: none;
     padding: 0;

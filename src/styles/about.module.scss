@@ -1,18 +1,22 @@
 .about-section {
   text-align: center;
-  padding: 4rem;
-  margin-bottom: 5rem;
+  padding: 5rem 3.8rem 13rem 3.8rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(rgba(41, 87, 164, 0.1), rgba(44, 89, 167, 0.1)),
+    url(../images/dTeam.jpg) no-repeat fixed;
+  background-size: cover;
+  object-fit: contain;
 }
 
 .about-section h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 2rem;
 }
 
 .about-section h5 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   line-height: 2.2rem;
-  color: #666;
+   color: #ffffff;
 }
 
 .team-section {
@@ -117,6 +121,7 @@
 @media only screen and (max-width: 600px) {
   .about-section {
     padding: 4rem 2rem 4rem 2rem;
+    background: none;
   }
 
   .about-section h5 {
