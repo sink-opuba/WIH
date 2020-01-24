@@ -44,3 +44,17 @@ $color-black: #1f1f1f;
     float: left;
   }
 }
+
+@media only screen and (max-width: 485px) {
+  .contact-details {
+    max-width: 23rem;
+    min-height: 25rem;
+  }
+
+  .contact-info ul li {
+    font-size: 1.1rem;
+    & span {
+      font-size: 1.8rem;
+    }
+  }
+}

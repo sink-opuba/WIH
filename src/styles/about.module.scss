@@ -48,7 +48,7 @@
 .img {
   width: 100%;
   box-shadow: 0 0 10px 0 rgba(#000, 0.1);
-  object-fit: cover;
+  object-fit: fill;
   transition: all 0.5s;
 }
 
@@ -124,13 +124,16 @@
     line-height: 2.2rem;
     color: #666;
   }
+  .team-section h2 {
+    font-size: 2rem;
+  }
 
   .team-member {
     padding: 2rem;
     margin: 0 auto;
   }
   .team-section {
-    padding: 2rem 3rem 8rem 3rem;
+    padding: 2rem 0rem 8rem 0rem;
   }
 }
 
@@ -139,6 +142,9 @@
   .tw-color {
     font-size: 1em;
     padding: 0.3rem;
+  }
+  .team-member {
+    padding: 0;
   }
   .team-member-details {
     top: 65%;

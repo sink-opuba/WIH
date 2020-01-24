@@ -207,4 +207,8 @@ $color-dark-grey-3: #333;
   .navigation__icon::after {
     width: 1.8rem;
   }
+
+  .navigation__item {
+    margin: 0;
+  }
 }

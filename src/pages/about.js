@@ -3,8 +3,6 @@ import Layout from "../components/layout"
 import AboutStyle from "../styles/about.module.scss"
 import SEO from "../components/seo"
 
-import { clara, audreyFunny } from "../images/team"
-
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa"
 
 const SecondPage = () => (
@@ -526,7 +524,7 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src={clara}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1579877729/team/clara_xdamuc.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}

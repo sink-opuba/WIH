@@ -30,7 +30,7 @@ $color-primary-dark: rgb(26, 79, 170);
   font-size: 1.4rem;
 }
 .quick-item {
-    padding: .8rem;
+  padding: 0.8rem;
 }
 
 .quick-item::after {
@@ -73,4 +73,14 @@ $color-primary-dark: rgb(26, 79, 170);
 .copyright {
   color: #ffffff;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-section {
+    padding: 0;
+  }
+
+  .contact-details {
+    padding: 0;
+  }
 }

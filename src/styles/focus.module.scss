@@ -1,7 +1,7 @@
 $color-primary-light: rgb(54, 98, 173);
 .container {
+  margin: 1rem;
 }
-
 .header {
   text-align: center;
   margin: 4rem;
@@ -11,6 +11,7 @@ $color-primary-light: rgb(54, 98, 173);
 
 .main-section {
   background-color: #f6f5f7;
+  border: 1px solid red;
   padding: 3rem 2rem 4rem 2rem;
 }
 
@@ -34,14 +35,15 @@ $color-primary-light: rgb(54, 98, 173);
 }
 
 .card-container {
+  border: 1px solid green;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 3rem;
 }
 
 .card {
-  max-width: 28rem;
-  min-width: 25rem;
+  max-width: 26rem;
   background-color: #fff;
   display: flex;
   text-align: center;
@@ -86,11 +88,37 @@ $color-primary-light: rgb(54, 98, 173);
 @media only screen and (max-width: 600px) {
   .header {
     margin: 3rem auto;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    padding: 0;
+  }
+  .main-section-header {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .card-container {
+    grid-template-columns: none;
+    padding: 0;
   }
 
   .card {
-    max-width: 23rem;
-    // min-width: 23rem;
+    padding: 1rem;
+  }
+
+  .card-icon {
+    padding: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .focus-icon {
+    font-size: 3rem;
+  }
+  .focus-header {
+    font-size: 1.2rem;
+  }
+
+  .focus-text {
+    font-size: 1rem;
   }
 }
