@@ -56,11 +56,7 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
-            >
+            <div className={AboutStyle.teamMemberDetails}>
               <h3>Paul Okoro</h3>
               <h4>Founder/CEO</h4>
             </div>
@@ -213,9 +209,8 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
+              style={{ color: "#7c7777" }}
+              className={AboutStyle.teamMemberDetails}
             >
               <h3>Newton Ewhrudjakpor</h3>
               <h4>COO</h4>
@@ -407,7 +402,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Dr Tamaradeinyefa Efiri</h3>
+              <h3 className={AboutStyle.pl}>Dr Tamaradeinyefa Efiri</h3>
               <h4>Social Impact Lead</h4>
             </div>
           </div>
@@ -559,7 +554,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Clara Akpovwovwo</h3>
+              <h3 className={AboutStyle.pl}>Clara Akpovwovwo</h3>
               <h4>Customer Relations</h4>
             </div>
           </div>
@@ -595,11 +590,7 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
-            >
+            <div className={AboutStyle.teamMemberDetails}>
               <h3>Ajiri Onaemo</h3>
               <h4>Sales Associate</h4>
             </div>
