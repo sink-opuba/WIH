@@ -18,7 +18,7 @@ const AreasOfFocusPage = () => (
     <div className={FocusStyle.container}>
       <h2 className={FocusStyle.header}>
         {" "}
-        We help to catalyze Africa's next generation innovations.
+        We help catalyze Africa's next generation innovations.
       </h2>
       <section className={FocusStyle.mainSection}>
         <h3 className={FocusStyle.mainSectionHeader}>Areas of Focus</h3>
