@@ -410,12 +410,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Marvis+Ofure"
+                src="https://via.placeholder.com/350x500.png?text=Marvis+Ighedosa"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Marvis+Ofure"
+                src="https://via.placeholder.com/350x500.png?text=Marvis+Ighedosa"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -438,7 +438,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Marvis Ofure</h3>
+              <h3>Marvis Ighedosa</h3>
               <h4>Design Lead</h4>
             </div>
           </div>
