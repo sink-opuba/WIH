@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const blogPage = () => (
   <Layout>
-    <SEO title="Our Focus" />
+    <SEO title="Blog" />
     <div className={FocusStyle.container}>
       <h2 className={FocusStyle.header}> Nothing here yet. Coming Soon!!</h2>
     </div>

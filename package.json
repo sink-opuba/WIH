@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Warri Innovation Hub",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The github repo of warri innovation hub website built with gatsbyjs",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sink Opuba <osinkopere@yahoo.com>",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -22,6 +22,7 @@
     "react-icons": "3.8.0"
   },
   "devDependencies": {
+    "env-cmd": "10.0.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -30,7 +31,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -39,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/waffiihub/WIH"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/waffiihub/WIH/issues"
   }
 }
