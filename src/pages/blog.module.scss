@@ -1,9 +1,43 @@
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .list {
-    border: 1px solid red;
-    width: 20%;
-    list-style-type: square;
+  border: 1px solid red;
+  width: 20%;
+  list-style-type: square;
+}
+
+.blog-posts-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1.6rem;
+}
+
+.blogPost {
+  max-width: 35rem;
+  padding: 2rem;
+
+  h2 {
+    color: #000000;
+  }
+
+  h2::first-letter {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #777777;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 1.1rem;
+    color: #333333;
+  }
 }
