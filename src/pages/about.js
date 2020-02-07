@@ -296,18 +296,18 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Amaju+Ashon"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106803/team/amaju_jjggxr.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Amaju+Ashon"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106805/team/amajuFunny_rdilxv.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
-                  href="#linkedin"
+                  href="https://twitter.com/amatwits"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -315,7 +315,7 @@ const SecondPage = () => (
                 </a>
                 <a
                   className={AboutStyle.lnColor}
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/amajuoritse-ashon-76679330"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -326,6 +326,43 @@ const SecondPage = () => (
             <div className={AboutStyle.teamMemberDetails}>
               <h3>Amaju Ashon</h3>
               <h4>Media Manager</h4>
+            </div>
+          </div>
+
+          <div className={AboutStyle.teamMember}>
+            <figure className={AboutStyle.teamShape}>
+              <img
+                className={AboutStyle.teamImg + " " + AboutStyle.img}
+                alt=""
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106807/team/jamin_rzsqqp.jpg"
+              />
+              <img
+                className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
+                alt=""
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106804/team/jaminFunny_eyg1zk.jpg"
+              />
+
+              <figcaption className={AboutStyle.teamSocials}>
+                <a
+                  className={AboutStyle.twColor}
+                  href="https://twitter.com/codekyd"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  className={AboutStyle.lnColor}
+                  href="https://www.linkedin.com/in/trust-jamin-2365b6147/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </figcaption>
+            </figure>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Jamin Okpukoro</h3>
+              <h4>Web Dev Lead</h4>
             </div>
           </div>
 
@@ -410,12 +447,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Marvis+Ighedosa"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106801/team/marvis_ynlo5d.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://via.placeholder.com/350x500.png?text=Marvis+Ighedosa"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106802/team/marvisFunny_kslutp.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>

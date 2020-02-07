@@ -2,8 +2,10 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import BlogStyle from "../styles/blog.module.scss"
+import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
+
+import featuredImg from "../images/warri.jpg"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -27,21 +29,28 @@ const BlogPage = () => {
     <Layout>
       <SEO title="Blog" />
       <div className={BlogStyle.container}>
-        <h1 className={BlogStyle.header}> Blog</h1>
-        <p>Posts will show up here later on.</p>
+        <div className={BlogStyle.blogHeader}>
+          <h1> Blog</h1>
+          <p>Posts will show up here later on.</p>
+        </div>
 
-        <ol className={BlogStyle.list}>
-          {data.allMarkdownRemark.edges.map((edge, index) => {
+        <div className={BlogStyle.blogPostsContainer}>
+          {data.allMarkdownRemark.edges.forEach(edge => {
             return (
-              <li key={index}>
+              <div className={BlogStyle.blogPost}>
                 <Link to={`/blog/${edge.node.fields.slug}`}>
+                  <img alt="featured img" src={featuredImg} />
                   <h2>{edge.node.frontmatter.title}</h2>
-                  <p>{edge.node.frontmatter.date}</p>
+                  <p>
+                    Lorem Ipsum some text to here. Tihs juts dummy text oesd not
+                    make any sense ...
+                  </p>
+                  <span>{edge.node.frontmatter.date}</span>
                 </Link>
-              </li>
+              </div>
             )
           })}
-        </ol>
+        </div>
       </div>
     </Layout>
   )
