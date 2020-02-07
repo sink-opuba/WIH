@@ -21,7 +21,7 @@ const AreasOfFocusPage = () => (
         We help catalyze Africa's next generation innovations.
       </h2>
       <section className={FocusStyle.mainSection}>
-        <h3 className={FocusStyle.mainSectionHeader}>Areas of Focus</h3>
+        <h3 className={FocusStyle.mainSectionHeader}>What We Do</h3>
         <div className={FocusStyle.cardContainer}>
           <div className={FocusStyle.card}>
             <div className={FocusStyle.cardIcon}>
