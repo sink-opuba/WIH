@@ -1,16 +1,59 @@
 import React from "react"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import FocusStyle from "../styles/focus.module.scss"
+import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 
-const blogPage = () => (
-  <Layout>
-    <SEO title="Blog" />
-    <div className={FocusStyle.container}>
-      <h2 className={FocusStyle.header}> Nothing here yet. Coming Soon!!</h2>
-    </div>
-  </Layout>
-)
+import featuredImg from "../images/warri.jpg"
 
-export default blogPage
+const BlogPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              date
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <div className={BlogStyle.container}>
+        <div className={BlogStyle.blogHeader}>
+          <h1> Blog</h1>
+          <p>Posts will show up here later on.</p>
+        </div>
+
+        <div className={BlogStyle.blogPostsContainer}>
+          {data.allMarkdownRemark.edges.forEach(edge => {
+            return (
+              <div className={BlogStyle.blogPost}>
+                <Link to={`/blog/${edge.node.fields.slug}`}>
+                  <img alt="featured img" src={featuredImg} />
+                  <h2>{edge.node.frontmatter.title}</h2>
+                  <p>
+                    Lorem Ipsum some text to here. Tihs juts dummy text oesd not
+                    make any sense ...
+                  </p>
+                  <span>{edge.node.frontmatter.date}</span>
+                </Link>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export default BlogPage
