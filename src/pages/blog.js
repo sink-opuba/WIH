@@ -9,13 +9,13 @@ import featuredImg from "../images/warri.jpg"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
-    query {
+    query postQuery {
       allMarkdownRemark {
         edges {
           node {
             frontmatter {
               title
-              date
+              date(formatString: "MMMM D, YYYY")
             }
             fields {
               slug
@@ -25,6 +25,8 @@ const BlogPage = () => {
       }
     }
   `)
+  const edges = data.allMarkdownRemark.edges
+
   return (
     <Layout>
       <SEO title="Blog" />
@@ -35,9 +37,9 @@ const BlogPage = () => {
         </div>
 
         <div className={BlogStyle.blogPostsContainer}>
-          {data.allMarkdownRemark.edges.forEach(edge => {
+          {edges.map((edge, index) => {
             return (
-              <div className={BlogStyle.blogPost}>
+              <div key={index} className={BlogStyle.blogPost}>
                 <Link to={`/blog/${edge.node.fields.slug}`}>
                   <img alt="featured img" src={featuredImg} />
                   <h2>{edge.node.frontmatter.title}</h2>
