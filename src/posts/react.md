@@ -3,7 +3,7 @@ title: React blog post
 date: 2019-01-29
 ---
 
-My first React blog post 
+You can rewrite the React UI library
 
 1. HTML
 2. CSS
