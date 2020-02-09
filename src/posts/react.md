@@ -1,9 +1,9 @@
 ---
-title: React blog post
+title: You can rewrite the React UI library
 date: 2019-01-29
 ---
 
-You can rewrite the React UI library
+React blog post 
 
 1. HTML
 2. CSS

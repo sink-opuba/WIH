@@ -1,9 +1,9 @@
 ---
-    title: gatsby blog post
+    title: How to create a customizable Gatsby Plugin
     date: 2019-01-29
 ---
 
-How to a customizable Gatsby Plugin
+Great gatsby blog post
 
 1. Gatsby
 2. React
