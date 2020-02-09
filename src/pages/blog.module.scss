@@ -18,6 +18,7 @@
 .blogPost {
   max-width: 35rem;
   padding: 2rem;
+  animation: moveInBottom 1s ease-out 0s;
 
   h2 {
     color: #000000;
@@ -39,5 +40,16 @@
   span {
     font-size: 1.1rem;
     color: #333333;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

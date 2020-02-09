@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import AboutStyle from "../styles/about.module.scss"
+import AboutStyle from "./about.module.scss"
 import SEO from "../components/seo"
 
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa"

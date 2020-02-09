@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import FocusStyle from "../styles/focus.module.scss"
+import FocusStyle from "./focus.module.scss"
 import SEO from "../components/seo"
 import {
   FaSuperpowers,
