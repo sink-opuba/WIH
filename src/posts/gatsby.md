@@ -3,7 +3,7 @@
     date: 2019-01-29
 ---
 
-My first great gatsby blog post
+How to a customizable Gatsby Plugin
 
 1. Gatsby
 2. React
