@@ -19,6 +19,7 @@ $color-primary-light: rgb(54, 98, 173);
   padding: 2rem;
   font-size: 2rem;
   display: inline-block;
+  animation: moveInLeft 1s ease-in-out 0s;
 }
 
 .main-section-header::after {
@@ -54,6 +55,7 @@ $color-primary-light: rgb(54, 98, 173);
   border-radius: 4px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
+  animation: moveInBottom 1s ease-in 0s;
 }
 
 .card:hover {
@@ -132,6 +134,31 @@ $color-primary-light: rgb(54, 98, 173);
   }
   60% {
     transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  60% {
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
