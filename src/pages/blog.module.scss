@@ -18,6 +18,7 @@
 .blogPost {
   max-width: 35rem;
   padding: 2rem;
+  transition: transform 0.3s;
   animation: moveInBottom 1s ease-out 0s;
 
   h2 {
@@ -40,6 +41,17 @@
   span {
     font-size: 1.1rem;
     color: #333333;
+  }
+}
+
+.blogPost:hover {
+  transform: translateY(-1.1rem) scale(1.01);
+  background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 600px) {
+  .blogPost {
+    margin: 0 auto;
   }
 }
 

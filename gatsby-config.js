@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none"
-      }
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,8 +20,8 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -34,7 +34,25 @@ module.exports = {
         icon: `src/images/waffiihub-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      plugins: [
+        // gatsby-remark-relative-images must
+        // go before gatsby-remark-images
+
+        `gatsby-remark-relative-images`,
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            // It's important to specify the maxWidth (in pixels) of
+            // the content container as this plugin uses this as the
+            // base for generating different widths of each image.
+            maxWidth: 700,
+            linkImagesToOriginal: false,
+          },
+        },
+      ],
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
