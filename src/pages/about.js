@@ -54,10 +54,12 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div className={AboutStyle.teamMemberDetails}>
-              <h3>Paul Okoro</h3>
-              <h4>Founder/CEO</h4>
-            </div>
+            <a name="paul">
+              <div className={AboutStyle.teamMemberDetails}>
+                <h3>Paul Okoro</h3>
+                <h4>Founder/CEO</h4>
+              </div>
+            </a>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -92,10 +94,12 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div className={AboutStyle.teamMemberDetails}>
-              <h3>Timothy Ovie</h3>
-              <h4>Co-Founder/Marketing & Comms</h4>
-            </div>
+            <a name="timothy">
+              <div className={AboutStyle.teamMemberDetails}>
+                <h3>Timothy Ovie</h3>
+                <h4>Co-Founder/Marketing & Comms</h4>
+              </div>
+            </a>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -130,10 +134,12 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div className={AboutStyle.teamMemberDetails}>
-              <h3>Sinkopere Opuba</h3>
-              <h4>CTO</h4>
-            </div>
+            <a name="sinkopere">
+              <div className={AboutStyle.teamMemberDetails}>
+                <h3>Sinkopere Opuba</h3>
+                <h4>CTO</h4>
+              </div>
+            </a>
           </div>
 
           <div className={AboutStyle.teamMember}>
