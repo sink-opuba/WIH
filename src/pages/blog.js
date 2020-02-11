@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 
-import featuredImg from "../images/warri.jpg"
+// import featuredImg from "../images/warri.jpg"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -16,9 +16,8 @@ const BlogPage = () => {
             frontmatter {
               title
               date(formatString: "MMM D, YYYY")
-            }
-            fields {
-              slug
+              path
+              featuredimage
             }
             excerpt
           }
@@ -40,8 +39,8 @@ const BlogPage = () => {
           {edges.map((edge, index) => {
             return (
               <div key={index} className={BlogStyle.blogPost}>
-                <Link to={`/blog/${edge.node.fields.slug}`}>
-                  <img alt="featured img" src={featuredImg} />
+                <Link to={`/blog/${edge.node.frontmatter.path}`}>
+                  <img alt="featured img" src={edge.node.frontmatter.featuredimage} />
                   <h2>{edge.node.frontmatter.title}</h2>
                   <p>{edge.node.excerpt}</p>
                   <span>{edge.node.frontmatter.date}</span>

@@ -2,8 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
-
-import authorImg from "../images/author_avatar.png"
 import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
@@ -22,11 +20,14 @@ const Blog = ({ data }) => {
         </div>
 
         <div className={BlogStyle.aboutAuthor}>
-          <img alt="featured img" src={authorImg} />
+          <img alt="featured img" src={post.frontmatter.authorimage} />
           <div className={BlogStyle.authorInfo}>
             <span>About the Author</span>
-            <h3>{post.author}</h3>
-            <p className={BlogStyle.description}>Lead @Waffiihub</p>
+            <h3>{post.frontmatter.author}</h3>
+            <p className={BlogStyle.description}>
+              {post.frontmatter.authorrole ? post.frontmatter.authorrole : null}{" "}
+              @Waffiihub
+            </p>
           </div>
         </div>
       </div>
@@ -38,13 +39,18 @@ export default Blog
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       frontmatter {
         title
+        path
+        description
         date(formatString: "MMMM D, YYYY")
+        featuredimage
         author
+        authorrole
+        authorimage
       }
+      html
       timeToRead
     }
   }
