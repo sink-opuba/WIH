@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 
-import authorImg from "../images/marvinoFunny.jpg"
+import authorImg from "../images/author_avatar.png"
 import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
