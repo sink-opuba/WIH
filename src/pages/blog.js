@@ -32,8 +32,8 @@ const BlogPage = () => {
       <SEO title="Blog" />
       <div className={BlogStyle.container}>
         <div className={BlogStyle.blogHeader}>
-          <h1> Blog</h1>
-          <p>Posts will show up here later on.</p>
+          <h1> News and Insights from the Hub</h1>
+          {/* <p>Posts will show up here later on.</p> */}
         </div>
 
         <div className={BlogStyle.blogPostsContainer}>
