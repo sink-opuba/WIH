@@ -4,6 +4,8 @@ backend:
 
 media_folder: static/assets
 public_folder: /assets
+site_url: https://warriinnovationhub.com
+display_url: https://warriinnovationhub.com
 
 collections:
   - name: blog
@@ -24,4 +26,5 @@ collections:
           label: "Author's Image",
           widget: image,
           default: "assets/author_avatar.png",
+          required: false,
         }
