@@ -14,8 +14,8 @@ const Blog = ({ data }) => {
       <div className={BlogStyle.container}>
         <div className={BlogStyle.postMetaInfo}>
           <h1>{post.frontmatter.title}</h1>
-          <h5>February 05, 2020</h5>
-          <p>5min Read</p>
+          <h5>{post.frontmatter.date}</h5>
+          <p>{post.timeToRead}min Read</p>
         </div>
         <div className={BlogStyle.blogPostBody}>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
@@ -25,7 +25,7 @@ const Blog = ({ data }) => {
           <img alt="featured img" src={authorImg} />
           <div className={BlogStyle.authorInfo}>
             <span>About the Author</span>
-            <h3>John Doe</h3>
+            <h3>{post.author}</h3>
             <p className={BlogStyle.description}>Lead @Waffiihub</p>
           </div>
         </div>
@@ -42,7 +42,10 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM D, YYYY")
+        author
       }
+      timeToRead
     }
   }
 `

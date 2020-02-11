@@ -15,11 +15,12 @@ const BlogPage = () => {
           node {
             frontmatter {
               title
-              date(formatString: "MMMM D, YYYY")
+              date(formatString: "MMM D, YYYY")
             }
             fields {
               slug
             }
+            excerpt
           }
         }
       }
@@ -33,7 +34,6 @@ const BlogPage = () => {
       <div className={BlogStyle.container}>
         <div className={BlogStyle.blogHeader}>
           <h1> News and Insights from the Hub</h1>
-          {/* <p>Posts will show up here later on.</p> */}
         </div>
 
         <div className={BlogStyle.blogPostsContainer}>
@@ -43,10 +43,7 @@ const BlogPage = () => {
                 <Link to={`/blog/${edge.node.fields.slug}`}>
                   <img alt="featured img" src={featuredImg} />
                   <h2>{edge.node.frontmatter.title}</h2>
-                  <p>
-                    Lorem Ipsum some text to here. Tihs juts dummy text oesd not
-                    make any sense ...
-                  </p>
+                  <p>{edge.node.excerpt}</p>
                   <span>{edge.node.frontmatter.date}</span>
                 </Link>
               </div>
