@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: sink-opuba/WIH
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: "Publish Date", widget: datetime }
+      - { name: title, label: Title }
+      - { name: description, label: Description, widget: "text" }
+      - { name: "featuredimage", label: "Featured Image", widget: image }
+      - { name: body, label: Body, widget: markdown }
+      - { name: author, label: "Author's Name" }
+      - { name: "authorrole", label: "Author's Role" }
+      - {
+          name: "authorimage",
+          label: "Author's Image",
+          widget: image,
+          default: "assets/author_avatar.png",
+        }

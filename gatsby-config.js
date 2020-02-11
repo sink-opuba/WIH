@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -16,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
-        path: `${__dirname}/src/`,
+        name: "blog",
+        path: `${__dirname}/blog/`,
       },
     },
 
