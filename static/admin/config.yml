@@ -6,6 +6,7 @@ media_folder: static/assets
 public_folder: /assets
 site_url: https://warriinnovationhub.com
 display_url: https://warriinnovationhub.com
+logo_url: https://res.cloudinary.com/waffiihub/image/upload/v1579554011/waffiihub-text-logo_qn3f3p.png
 
 collections:
   - name: blog
