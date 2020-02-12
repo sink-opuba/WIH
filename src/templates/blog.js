@@ -15,6 +15,9 @@ const Blog = ({ data }) => {
           <h5>{post.frontmatter.date}</h5>
           <p>{post.timeToRead}min Read</p>
         </div>
+        <div className={BlogStyle.featuredImg}>
+          <img alt="featured img" src={post.frontmatter.featuredimage} />
+        </div>
         <div className={BlogStyle.blogPostBody}>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </div>
