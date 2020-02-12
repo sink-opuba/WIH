@@ -1,7 +1,7 @@
 ---
 path: react-tutorial
 date: 2020-02-11T06:19:29.831Z
-title: How to write elegant and maintainable components
+title: How to write elegant and maintainable react components
 description: maintainable components
 featuredimage: /assets/react-code.png
 author: Sink Opuba
