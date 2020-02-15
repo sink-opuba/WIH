@@ -54,10 +54,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Paul Okoro</h3>
-                <h4>Founder/CEO</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Paul Okoro</h3>
+              <h4>Founder/CEO</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -92,10 +92,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Timothy Ovie</h3>
-                <h4>Co-Founder/Marketing & Comms</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Timothy Ovie</h3>
+              <h4>Co-Founder/Marketing & Comms</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -103,7 +103,7 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579866266/team/sink_arynxl.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581791542/team/sink_bmmpha.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
@@ -130,10 +130,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Sinkopere Opuba</h3>
-                <h4>CTO</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Sinkopere Opuba</h3>
+              <h4>CTO</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -168,10 +168,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Audrey Mukoro</h3>
-                <h4>CFO</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Audrey Mukoro</h3>
+              <h4>CFO</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -206,13 +206,13 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div
-                style={{ color: "#7c7777" }}
-                className={AboutStyle.teamMemberDetails}
-              >
-                <h3>Newton Ewhrudjakpor</h3>
-                <h4>COO</h4>
-              </div>
+            <div
+              style={{ color: "#7c7777" }}
+              className={AboutStyle.teamMemberDetails}
+            >
+              <h3>Newton Ewhrudjakpor</h3>
+              <h4>COO</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -247,10 +247,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Austin K. Ngwu</h3>
-                <h4>Legal Advisor</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Austin K. Ngwu</h3>
+              <h4>Legal Advisor</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -285,10 +285,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Mavino Michael</h3>
-                <h4>Mobile Dev Lead</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Mavino Michael</h3>
+              <h4>Mobile Dev Lead</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -323,10 +323,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Amaju Ashon</h3>
-                <h4>Media Manager</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Amaju Ashon</h3>
+              <h4>Media Manager</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -360,10 +360,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Jamin Okpukoro</h3>
-                <h4>Web Dev Lead</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Jamin Okpukoro</h3>
+              <h4>Web Dev Lead</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -398,10 +398,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Ejevwoke Ikuiagbe</h3>
-                <h4>HR</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Ejevwoke Ikuiagbe</h3>
+              <h4>HR</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -437,10 +437,10 @@ const SecondPage = () => (
               </figcaption>
             </figure>
 
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3 className={AboutStyle.pl}>Tamaradeinyefa Efiri</h3>
-                <h4>Social Impact Lead</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3 className={AboutStyle.pl}>Tamaradeinyefa Efiri</h3>
+              <h4>Social Impact Lead</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -475,10 +475,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Marvis Ighedosa</h3>
-                <h4>Design Lead</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Marvis Ighedosa</h3>
+              <h4>Design Lead</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -513,10 +513,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Flora Owhiroro</h3>
-                <h4>Android Developer</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Flora Owhiroro</h3>
+              <h4>Android Developer</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -551,10 +551,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Mercy</h3>
-                <h4>Media Associate</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Mercy</h3>
+              <h4>Media Associate</h4>
+            </div>
           </div>
 
           <div className={AboutStyle.teamMember}>
@@ -589,10 +589,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3 className={AboutStyle.pl}>Clara Akpovwovwo</h3>
-                <h4>Customer Relations</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3 className={AboutStyle.pl}>Clara Akpovwovwo</h3>
+              <h4>Customer Relations</h4>
+            </div>
           </div>
           <div className={AboutStyle.teamMember}>
             <figure className={AboutStyle.teamShape}>
@@ -626,10 +626,10 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-              <div className={AboutStyle.teamMemberDetails}>
-                <h3>Ajiri Onaemo</h3>
-                <h4>Sales Associate</h4>
-              </div>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Ajiri Onaemo</h3>
+              <h4>Sales Associate</h4>
+            </div>
           </div>
         </div>
       </section>
