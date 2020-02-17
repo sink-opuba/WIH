@@ -9,12 +9,11 @@ const urlNode = require("url")
 
 const Blog = ({ data }) => {
   const post = data.markdownRemark
-  console.log(urlNode.href)
   let url = ""
-  if (window) {
-    url = window.location.href
-  } else {
+  if (!window) {
     url = urlNode.href
+  } else {
+    url = window.location.href
   }
   return (
     <Layout>
