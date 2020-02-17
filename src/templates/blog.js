@@ -12,7 +12,6 @@ const url =
     : global.location
 const Blog = ({ data }) => {
   const post = data.markdownRemark
-  console.log(url)
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
