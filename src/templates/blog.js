@@ -5,16 +5,14 @@ import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-const urlNode = require("url")
+// const urlNode = require("url")
 
+const url =
+  process.env.NODE_ENV === "development"
+    ? window.location.href
+    : global.location.href
 const Blog = ({ data }) => {
   const post = data.markdownRemark
-  let url = ""
-  if (window === "undefined") {
-    url = urlNode.href
-  } else {
-    url = window.location.href
-  }
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
