@@ -5,14 +5,16 @@ import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
+const urlNode = require("url")
 
 const Blog = ({ data }) => {
   const post = data.markdownRemark
+  console.log(urlNode.href)
   let url = ""
   if (window) {
     url = window.location.href
   } else {
-    url = global.location.href
+    url = urlNode.href
   }
   return (
     <Layout>
