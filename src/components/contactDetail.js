@@ -26,7 +26,7 @@ const ContactDetail = () => (
         <li>
           <a
             style={{ color: "#3A5895" }}
-            href="#facebook"
+            href="https://www.facebook.com/warriinnovationhub/"
             target="_blank"
             rel="noopener noreferrer"
           >

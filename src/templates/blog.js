@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 const Blog = ({ data }) => {
   const post = data.markdownRemark
@@ -12,8 +14,41 @@ const Blog = ({ data }) => {
       <div className={BlogStyle.container}>
         <div className={BlogStyle.postMetaInfo}>
           <h1>{post.frontmatter.title}</h1>
-          <h5>{post.frontmatter.date}</h5>
-          <p>{post.timeToRead}min Read</p>
+          <div>
+            <h5>
+              {post.frontmatter.date} . {post.timeToRead} min Read
+            </h5>
+          </div>
+        </div>
+        <div className={BlogStyle.socialIcons}>
+          <a
+            href={`mailto:?&body=${window.location.href}/`}
+            target="_blank"
+            className={BlogStyle.email}
+          >
+            <MdEmail />
+          </a>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/`}
+            target="_blank"
+            className={BlogStyle.facebook}
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${window.location.href}/`}
+            target="_blank"
+            className={BlogStyle.twitter}
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href={`http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}/`}
+            target="_blank"
+            className={BlogStyle.linkedin}
+          >
+            <FaLinkedinIn />
+          </a>
         </div>
         <div className={BlogStyle.featuredImg}>
           <img alt="featured img" src={post.frontmatter.featuredimage} />
