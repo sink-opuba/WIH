@@ -10,7 +10,7 @@ const urlNode = require("url")
 const Blog = ({ data }) => {
   const post = data.markdownRemark
   let url = ""
-  if (!window) {
+  if (window === "undefined") {
     url = urlNode.href
   } else {
     url = window.location.href
