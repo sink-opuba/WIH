@@ -8,6 +8,10 @@ import { MdEmail } from "react-icons/md"
 
 const Blog = ({ data }) => {
   const post = data.markdownRemark
+  let url = window.location.href
+  if (!window) {
+    url = global.location.href
+  }
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -22,7 +26,7 @@ const Blog = ({ data }) => {
         </div>
         <div className={BlogStyle.socialIcons}>
           <a
-            href={`mailto:?&body=${global.location.href}/`}
+            href={`mailto:?&body=${url}/`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.email}
@@ -30,7 +34,7 @@ const Blog = ({ data }) => {
             <MdEmail />
           </a>
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${global.location.href}/`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${url}/`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.facebook}
@@ -38,7 +42,7 @@ const Blog = ({ data }) => {
             <FaFacebookF />
           </a>
           <a
-            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${global.location.href}/`}
+            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${url}/`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.twitter}
@@ -46,7 +50,7 @@ const Blog = ({ data }) => {
             <FaTwitter />
           </a>
           <a
-            href={`http://www.linkedin.com/shareArticle?mini=true&url=${global.location.href}/`}
+            href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}/`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.linkedin}
