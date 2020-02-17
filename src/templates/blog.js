@@ -22,29 +22,33 @@ const Blog = ({ data }) => {
         </div>
         <div className={BlogStyle.socialIcons}>
           <a
-            href={`mailto:?&body=${window.location.href}/`}
+            href={`mailto:?&body=${global.location.href}/`}
             target="_blank"
+            rel="noopener noreferrer"
             className={BlogStyle.email}
           >
             <MdEmail />
           </a>
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}/`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${global.location.href}/`}
             target="_blank"
+            rel="noopener noreferrer"
             className={BlogStyle.facebook}
           >
             <FaFacebookF />
           </a>
           <a
-            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${window.location.href}/`}
+            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${global.location.href}/`}
             target="_blank"
+            rel="noopener noreferrer"
             className={BlogStyle.twitter}
           >
             <FaTwitter />
           </a>
           <a
-            href={`http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}/`}
+            href={`http://www.linkedin.com/shareArticle?mini=true&url=${global.location.href}/`}
             target="_blank"
+            rel="noopener noreferrer"
             className={BlogStyle.linkedin}
           >
             <FaLinkedinIn />
