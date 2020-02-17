@@ -8,8 +8,10 @@ import { MdEmail } from "react-icons/md"
 
 const Blog = ({ data }) => {
   const post = data.markdownRemark
-  let url = window.location.href
-  if (!window) {
+  let url = ""
+  if (window) {
+    url = window.location.href
+  } else {
     url = global.location.href
   }
   return (
