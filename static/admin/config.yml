@@ -18,6 +18,7 @@ collections:
       - { name: date, label: "Publish Date", widget: datetime }
       - { name: title, label: Title }
       - { name: description, label: Description, widget: "text" }
+      - { name: tag, label: "Tag (insight or news)", widget: "text" }
       - { name: "featuredimage", label: "Featured Image", widget: image }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: "Author's Name" }

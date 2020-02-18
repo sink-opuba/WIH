@@ -5,6 +5,18 @@ exports.createPages = async function({ actions, graphql }) {
     query {
       allMarkdownRemark {
         edges {
+          next {
+            frontmatter {
+              title
+              path
+            }
+          }
+          previous {
+            frontmatter {
+              title
+              path
+            }
+          }
           node {
             frontmatter {
               path
@@ -15,11 +27,17 @@ exports.createPages = async function({ actions, graphql }) {
     }
   `)
   data.allMarkdownRemark.edges.forEach(edge => {
-    const slug = edge.node.frontmatter.path
+    const path = edge.node.frontmatter.path
+    const next = edge.next ? edge.next.frontmatter : null
+    const prev = edge.previous ? edge.previous.frontmatter : null
     actions.createPage({
-      path: `blog/${slug}`,
+      path: `blog/${path}`,
       component: require.resolve(`./src/templates/blog.js`),
-      context: { slug: slug },
+      context: {
+        slug: path,
+        prev,
+        next,
+      },
     })
   })
 }

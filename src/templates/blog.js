@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
@@ -10,8 +10,9 @@ const url =
   process.env.NODE_ENV === "development"
     ? window.location.href
     : global.location
-const Blog = ({ data }) => {
+const Blog = ({ data, pageContext }) => {
   const post = data.markdownRemark
+  const { next, prev } = pageContext
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -76,6 +77,18 @@ const Blog = ({ data }) => {
             </p>
           </div>
         </div>
+      </div>
+      <div className={BlogStyle.articleLinks}>
+        {prev && (
+          <Link to={`/blog/${prev.path}`}>
+            prev <span>&larr;</span> {prev.title}
+          </Link>
+        )}
+        {next && (
+          <Link to={`/blog/${next.path}`}>
+            next <span>&rarr; </span> {next.title}
+          </Link>
+        )}
       </div>
     </Layout>
   )

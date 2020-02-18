@@ -10,16 +10,17 @@ import SEO from "../components/seo"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query postQuery {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
               title
-              date(formatString: "MMM D, YYYY")
+              date(formatString: "MMM_Do, YYYY")
               path
               featuredimage
+              tag
             }
-            excerpt
+            excerpt(pruneLength: 108)
           }
         }
       }
@@ -32,7 +33,7 @@ const BlogPage = () => {
       <SEO title="Blog" />
       <div className={BlogStyle.container}>
         <div className={BlogStyle.blogHeader}>
-          <h1> News and Insights from the Hub</h1>
+          <h1> NEWS AND INSIGHTS</h1>
         </div>
 
         <div className={BlogStyle.blogPostsContainer}>
@@ -40,7 +41,13 @@ const BlogPage = () => {
             return (
               <div key={index} className={BlogStyle.blogPost}>
                 <Link to={`/blog/${edge.node.frontmatter.path}`}>
-                  <img alt="featured img" src={edge.node.frontmatter.featuredimage} />
+                  <img
+                    alt="featured img"
+                    src={edge.node.frontmatter.featuredimage}
+                  />
+                  <span className={BlogStyle.blogTag}>
+                    {edge.node.frontmatter.tag}
+                  </span>
                   <h2>{edge.node.frontmatter.title}</h2>
                   <p>{edge.node.excerpt}</p>
                   <span>{edge.node.frontmatter.date}</span>

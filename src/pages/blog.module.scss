@@ -9,18 +9,26 @@
 .blog-posts-container {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 1.6rem;
 }
 
 .blogPost {
-  max-width: 35rem;
-  padding: 2rem;
+  text-align: left;
+  max-width: 37rem;
+  padding: 1rem;
   transition: transform 0.3s;
   animation: moveInBottom 1s ease-out 0s;
 
+  .blog-tag {
+    color: #df1995;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+  }
   h2 {
     color: #000000;
+    font-size: 1.9rem;
   }
 
   h2::first-letter {
@@ -38,7 +46,8 @@
 
   span {
     font-size: 1.1rem;
-    color: #333333;
+    font-weight: bold;
+    color: #1a4faa
   }
 }
 
