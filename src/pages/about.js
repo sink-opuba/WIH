@@ -552,7 +552,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Mercy</h3>
+              <h3>Mercy Oyebade</h3>
               <h4>Media Associate</h4>
             </div>
           </div>
