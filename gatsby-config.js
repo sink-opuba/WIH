@@ -55,6 +55,12 @@ module.exports = {
         },
       ],
     },
+    {
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: "5e55057ba89cda5a1887d46b",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
