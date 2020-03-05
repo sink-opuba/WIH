@@ -3,7 +3,9 @@ module.exports = {
     title: `Warri Innovation Hub`,
     description: `An innovation hub in Warri catalyzing innovations and technologies with high growth potentials built by Africans to solve local or global problems.`,
     author: `@WaffiiHub`,
+    twitterUsername: `@WaffiiHub`,
     siteUrl: `https://warriinnovationhub.com`,
+    image: `src/images/waffiihub-icon.png`,
   },
   plugins: [
     `gatsby-plugin-sass`,
