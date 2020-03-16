@@ -3,11 +3,11 @@ path: gatsby-tutorial
 date: 2020-02-15T06:19:29.831Z
 title: How to write your own gatsby plugin
 description: gatsby plugin
-featuredimage: /assets/react-code.png
 tag: insight
+featuredimage: /assets/react-code.png
 author: Sink Opuba
 authorrole: CTO
-authorimage: /assets/author_avatar.png
+authorimage: /assets/Rebekah.jpg
 ---
 I am here to tell you that writing your own Gatsby plugin is way easier than you think. You maybe wondering, what the heck is this dude yarning? Yeah I know! We've all been there. Let's get started. No time to say no time. Now grab your plugin writing tools and let us get to the business of the day.
 
