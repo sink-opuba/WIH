@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import {graphql, Link } from "gatsby"
+import config from "../../gatsby-config"
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
@@ -7,11 +8,8 @@ import SEO from "../components/seo"
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 
-const url =
-  process.env.NODE_ENV === "development"
-    ? window.location.href
-    : global.location
-const Blog = ({ data, pageContext }) => {
+const Blog = ({ data, pageContext, location }) => {
+  const url = `${config.siteMetadata.siteUrl+location.pathname }`
   const post = data.markdownRemark
   const { next, prev } = pageContext
   return (
@@ -28,7 +26,7 @@ const Blog = ({ data, pageContext }) => {
         </div>
         <div className={BlogStyle.socialIcons}>
           <a
-            href={`mailto:?&body=${url}/`}
+            href={`mailto:?&body=${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.email}
@@ -36,7 +34,7 @@ const Blog = ({ data, pageContext }) => {
             <MdEmail />
           </a>
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${url}/`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.facebook}
@@ -44,7 +42,7 @@ const Blog = ({ data, pageContext }) => {
             <FaFacebookF />
           </a>
           <a
-            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${url}/`}
+            href={`https://twitter.com/share?text=${post.frontmatter.title}&url=${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.twitter}
@@ -52,7 +50,7 @@ const Blog = ({ data, pageContext }) => {
             <FaTwitter />
           </a>
           <a
-            href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}/`}
+            href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}`}
             target="_blank"
             rel="noopener noreferrer"
             className={BlogStyle.linkedin}
