@@ -7,7 +7,7 @@ featuredimage: ../static/assets/react-code.png
 tag: insight
 author: Sink Opuba
 authorrole: CTO
-authorimage: ../static/assets/author_avatar.png
+authorimage: ../static/assets/Rebekah.jpg
 ---
 I am here to tell you that writing your own Gatsby plugin is way easier than you think. You maybe wondering, what the heck is this dude yarning? Yeah I know! We've all been there. Let's get started. No time to say no time. Now grab your plugin writing tools and let us get to the business of the day.
 
