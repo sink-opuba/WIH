@@ -23,6 +23,12 @@ module.exports = {
         path: `${__dirname}/blog/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+      },
+    },
 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

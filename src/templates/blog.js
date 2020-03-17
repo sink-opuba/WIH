@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
@@ -60,14 +61,14 @@ const Blog = ({ data, pageContext }) => {
           </a>
         </div>
         <div className={BlogStyle.featuredImg}>
-          <img alt="featured img" src={post.frontmatter.featuredimage} />
+          <Img fluid={post.frontmatter.featuredimage.childImageSharp.fluid} />
         </div>
         <div className={BlogStyle.blogPostBody}>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </div>
 
         <div className={BlogStyle.aboutAuthor}>
-          <img alt="featured img" src={post.frontmatter.authorimage} />
+          <Img fixed={post.frontmatter.authorimage.childImageSharp.fixed} />
           <div className={BlogStyle.authorInfo}>
             <span>About the Author</span>
             <h3>{post.frontmatter.author}</h3>
@@ -103,11 +104,23 @@ export const query = graphql`
         title
         path
         description
-        date(formatString: "MMMM D, YYYY")
-        featuredimage
+        date(formatString: "MMM Do, YYYY")
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         author
         authorrole
-        authorimage
+        authorimage {
+          childImageSharp {
+            fixed(width: 60, height: 60) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
       html
       timeToRead
