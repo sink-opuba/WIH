@@ -1,11 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-
+import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 
-// import featuredImg from "../images/warri.jpg"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -15,9 +14,16 @@ const BlogPage = () => {
           node {
             frontmatter {
               title
-              date(formatString: "MMM_Do, YYYY")
+              date(fromNow: true)
               path
-              featuredimage
+              featuredimage {
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              imagedescription
               tag
             }
             excerpt(pruneLength: 108)
@@ -41,10 +47,7 @@ const BlogPage = () => {
             return (
               <div key={index} className={BlogStyle.blogPost}>
                 <Link to={`/blog/${edge.node.frontmatter.path}`}>
-                  <img
-                    alt="featured img"
-                    src={edge.node.frontmatter.featuredimage}
-                  />
+                  <Img alt={edge.node.frontmatter.imagedescription} fluid={edge.node.frontmatter.featuredimage.childImageSharp.fluid}/>
                   <span className={BlogStyle.blogTag}>
                     {edge.node.frontmatter.tag}
                   </span>

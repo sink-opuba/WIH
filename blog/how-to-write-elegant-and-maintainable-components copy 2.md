@@ -3,11 +3,12 @@ path: new-react-tutorial
 date: 2020-02-02T06:19:29.831Z
 title: You want to rewrite the react library, right?
 description: maintainable components
-featuredimage: /assets/react-code.png
+featuredimage: ../static/assets/react-code.png
+imagedescription: react code
 tag: news
 author: Sink Opuba
 authorrole: CTO
-authorimage: /assets/author_avatar.png
+authorimage: ../static/assets/author_avatar.png
 ---
 Well I got some news for you. Good and bad. The goodnews is, you can. But the bad news is, you don't have to. I am sure of heard of the term 'Reinventing the wheel'. That's exactly what it amounts to.
 
