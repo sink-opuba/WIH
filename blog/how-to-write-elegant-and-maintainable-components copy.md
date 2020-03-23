@@ -5,6 +5,7 @@ title: How to write your own gatsby plugin
 description: gatsby plugin
 tag: insight
 featuredimage: ../static/assets/react-code.png
+imagedescription: react code
 author: Sink Opuba
 authorrole: CTO
 authorimage: ../static/assets/Rebekah.jpg

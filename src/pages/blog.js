@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import BlogStyle from "./blog.module.scss"
 import SEO from "../components/seo"
 
-// import featuredImg from "../images/warri.jpg"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +23,7 @@ const BlogPage = () => {
                   }
                 }
               }
+              imagedescription
               tag
             }
             excerpt(pruneLength: 108)
@@ -47,11 +47,7 @@ const BlogPage = () => {
             return (
               <div key={index} className={BlogStyle.blogPost}>
                 <Link to={`/blog/${edge.node.frontmatter.path}`}>
-                  <Img fluid={edge.node.frontmatter.featuredimage.childImageSharp.fluid}/>
-                  {/* <img
-                    alt="featured img"
-                    src={edge.node.frontmatter.featuredimage}
-                  /> */}
+                  <Img alt={edge.node.frontmatter.imagedescription} fluid={edge.node.frontmatter.featuredimage.childImageSharp.fluid}/>
                   <span className={BlogStyle.blogTag}>
                     {edge.node.frontmatter.tag}
                   </span>

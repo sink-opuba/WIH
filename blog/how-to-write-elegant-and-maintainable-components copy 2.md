@@ -4,6 +4,7 @@ date: 2020-02-02T06:19:29.831Z
 title: You want to rewrite the react library, right?
 description: maintainable components
 featuredimage: ../static/assets/react-code.png
+imagedescription: react code
 tag: news
 author: Sink Opuba
 authorrole: CTO

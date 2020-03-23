@@ -59,7 +59,7 @@ const Blog = ({ data, pageContext, location }) => {
           </a>
         </div>
         <div className={BlogStyle.featuredImg}>
-          <Img fluid={post.frontmatter.featuredimage.childImageSharp.fluid} />
+          <Img alt={post.frontmatter.imagedescription} fluid={post.frontmatter.featuredimage.childImageSharp.fluid} />
         </div>
         <div className={BlogStyle.blogPostBody}>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
@@ -110,6 +110,7 @@ export const query = graphql`
             }
           }
         }
+        imagedescription
         author
         authorrole
         authorimage {

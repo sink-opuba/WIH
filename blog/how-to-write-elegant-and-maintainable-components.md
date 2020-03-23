@@ -4,6 +4,7 @@ date: 2020-02-11T06:19:29.831Z
 title: How to write elegant and maintainable react components
 description: maintainable components
 featuredimage: ../static/assets/react-code.png
+imagedescription: react code
 tag: insight
 author: Sink Opuba
 authorrole: CTO
