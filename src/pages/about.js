@@ -103,44 +103,6 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1581791542/team/sink_bmmpha.jpg"
-              />
-              <img
-                className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
-                alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209580/team/sink_t8amhs.jpg"
-              />
-
-              <figcaption className={AboutStyle.teamSocials}>
-                <a
-                  className={AboutStyle.twColor}
-                  href="https://twitter.com/synkode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  className={AboutStyle.lnColor}
-                  href="https://www.linkedin.com/in/sinkopere-opuba/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </figcaption>
-            </figure>
-            <div className={AboutStyle.teamMemberDetails}>
-              <h3>Sinkopere Opuba</h3>
-              <h4>CTO</h4>
-            </div>
-          </div>
-
-          <div className={AboutStyle.teamMember}>
-            <figure className={AboutStyle.teamShape}>
-              <img
-                className={AboutStyle.teamImg + " " + AboutStyle.img}
-                alt=""
                 src="https://res.cloudinary.com/waffiihub/image/upload/v1580209545/team/audrey_butnxa.jpg"
               />
               <img
